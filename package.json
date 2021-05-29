@@ -1,7 +1,6 @@
 {
   "name": "mytest",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "start"
@@ -21,8 +20,17 @@
   },
   "homepage": "https://github.com/pallenJ/FB_Node#readme",
   "dependencies": {
+    "eslint": "^7.27.0",
+    "eslint-plugin-promise": "^5.1.0",
     "firebase": "^8.6.3",
+    "firebase-app": "0.0.1",
     "firebase-auth": "^0.1.2",
+    "firebase-tools": "^9.12.0",
     "firestore": "^1.1.6"
-  }
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "12"
+  },
+  "description": ""
 }
