@@ -1,0 +1,28 @@
+{
+  "name": "mytest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallenJ/FB_Node.git"
+  },
+  "keywords": [
+    "my",
+    "study"
+  ],
+  "author": "joonmo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pallenJ/FB_Node/issues"
+  },
+  "homepage": "https://github.com/pallenJ/FB_Node#readme",
+  "dependencies": {
+    "firebase": "^8.6.3",
+    "firebase-auth": "^0.1.2",
+    "firestore": "^1.1.6"
+  }
+}
