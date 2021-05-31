@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var firebase = require('firebase')
+var firebaseui = require('firebaseui');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
