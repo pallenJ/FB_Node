@@ -1,7 +1,7 @@
 'use strict';
 
 
-module.exports = ({_uid , _title , _content })=>{
+export default ({_uid , _title , _content })=>{
 
     return {
         uid:_uid,
