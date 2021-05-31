@@ -7,7 +7,6 @@ const functions = require("firebase-functions");
 //   functions.logger.info("Hello logs!", {structuredData: true});
 //   response.send("Hello from Firebase!");
 // });
-<<<<<<< HEAD
 //const express = require("../app")
 
 const app1 = require("../app");
@@ -21,5 +20,3 @@ const api1 = functions.https.onRequest(app1);
 module.exports = {
   api1
 }
-=======
->>>>>>> fc0fb8a2a5c0368493153d35d8805d3d7ab26ad2

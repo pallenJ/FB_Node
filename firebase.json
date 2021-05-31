@@ -20,7 +20,6 @@
     ],
     "rewrites": [
       {
-<<<<<<< HEAD
         "source": "/**",
         "function": "api1"
       }
@@ -29,13 +28,6 @@
   "storage": {
     "rules": "storage.rules"
   },
-=======
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  },
->>>>>>> fc0fb8a2a5c0368493153d35d8805d3d7ab26ad2
   "emulators": {
     "auth": {
       "port": 9099
@@ -50,11 +42,7 @@
       "port": 9000
     },
     "hosting": {
-<<<<<<< HEAD
       "port": 5000
-=======
-      "port": 5001
->>>>>>> fc0fb8a2a5c0368493153d35d8805d3d7ab26ad2
     },
     "pubsub": {
       "port": 8085
@@ -66,11 +54,7 @@
       "enabled": true
     }
   },
-<<<<<<< HEAD
   "remoteconfig": {
     "template": "remoteconfig.template.json"
   }
-=======
-  "remoteconfig": {}
->>>>>>> fc0fb8a2a5c0368493153d35d8805d3d7ab26ad2
 }
