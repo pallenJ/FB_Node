@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+node_modules
+node_modules
+=======
+>>>>>>> 8dfb7b3356c0ab9ffdf758e53512472b5085bc70
 # Logs
 logs
 *.log
@@ -64,4 +71,8 @@ node_modules/
 
 # dotenv environment variables file
 .env
+<<<<<<< HEAD
 node_modules
+=======
+>>>>>>> fc0fb8a2a5c0368493153d35d8805d3d7ab26ad2
+>>>>>>> 8dfb7b3356c0ab9ffdf758e53512472b5085bc70
