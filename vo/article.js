@@ -1,13 +1,14 @@
 'use strict';
 
 
-export default ({_uid , _title , _content })=>{
+module.exports = (val)=>{
 
     return {
-        uid:_uid,
-        title:_title,
-        content:_content,
-        timestamp: Date.now()
+        bno:val.bno||'',
+        title:val.title||'',
+        content:val.content || '',
+        added : val.added || Date.now(),
+        edited: Date.now()
     };
 
 };

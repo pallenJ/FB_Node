@@ -3,7 +3,7 @@ var router = express.Router();
 var firebase = require('firebase').default;
 var functions = require('firebase-functions');
 var log = functions.logger;
-
+var Article = require('../vo/Article') 
 var config = {
     apiKey: "AIzaSyCEsUYmEz_qu9V8RSLjPKI3ZwRXn1lVKDQ",
     authDomain: "https://joonmohome.firebaseapp.com/",
@@ -15,30 +15,29 @@ var config = {
 firebase.initializeApp(config)
 var db = firebase.firestore().collection('article');
 
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
     return null;
 });
 
 router.post('/save', async(req, res, next) => {
-    var { bno, title, content } = req.body;
-    var boardData = { bno: "", title: title, content: content, status: "added", added: null, lastEdit: null };
-    if (bno) {
-        boardData.bno = bno;
-        boardData.status = "edited";
-        boardData.added = (await db.doc(bno).get()).data().added;
-        boardData.lastEdit = Date.now();
-        await db.doc(bno).update(boardData);
-    } else {
-        boardData.added = Date.now();
-        var doc = db.doc();
-        boardData.bno = doc.id;
-        await doc.set(boardData);
+    var articleTemp = Article(req.body);
+    var status = 'added';
+    if(articleTemp.bno){
+        articleTemp.added = (await db.doc(bno).get()).data().added;
+        articleTemp.edited = Date.now();
+        await db.doc(bno).update(articleTemp);
+        status = 'edited';
     }
-    res.json(boardData);
+    else{
+        var doc = db.doc();
+        articleTemp.bno = doc.id;
+        await doc.set(articleTemp);
+    }
+
+    res.json({article:articleTemp, status:status});
 });
-
-
 
 
 router.delete('/remove', async(req, res, next) => {
