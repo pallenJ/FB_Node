@@ -2,7 +2,7 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     match /article/{document=**} {
-6
+
       allow read:if true
       allow create: if true
       allow delete: if true
@@ -13,5 +13,5 @@ service cloud.firestore {
     //  allow write:if true
     //}
   }
-17
+
 }

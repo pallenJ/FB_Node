@@ -5,7 +5,11 @@
   "scripts": {
     "start": "node ./bin/www"
   },
+  "engines": {
+    "node": "14"
+  },
   "dependencies": {
+    "12": "^1.0.2",
     "bootstrap5": "^1.1.9",
     "cookie-parser": "~1.4.4",
     "dateformat": "^4.5.1",
@@ -14,13 +18,27 @@
     "express": "^4.16.4",
     "firebase": "^8.6.3",
     "firebase-admin": "^9.9.0",
+    "firebase-cli": "^1.2.0",
     "firebase-functions": "^3.14.1",
+    "firebase-tools": "^9.12.1",
     "http-errors": "~1.6.3",
     "log4js": "^6.3.0",
     "morgan": "~1.9.1",
     "startbootstrap": "0.0.1"
   },
   "devDependencies": {
-    "@babel/register": "^7.13.16"
-  }
+    "eslint-config-prettier": "^8.3.0"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallenJ/FB_Node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pallenJ/FB_Node/issues"
+  },
+  "homepage": "https://github.com/pallenJ/FB_Node#readme",
+  "description": ""
 }
