@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "bootstrap5": "^1.1.9",
     "cookie-parser": "~1.4.4",
     "dateformat": "^4.5.1",
     "debug": "~2.6.9",
@@ -16,7 +17,8 @@
     "firebase-functions": "^3.14.1",
     "http-errors": "~1.6.3",
     "log4js": "^6.3.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "startbootstrap": "0.0.1"
   },
   "devDependencies": {
     "@babel/register": "^7.13.16"
