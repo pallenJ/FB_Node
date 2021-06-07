@@ -5,15 +5,18 @@ var functions = require('firebase-functions');
 var log = functions.logger;
 var dateFormat = require('dateformat');
 var Article = require('../vo/Article')
-var config = {
-    apiKey: "AIzaSyCEsUYmEz_qu9V8RSLjPKI3ZwRXn1lVKDQ",
-    authDomain: "https://joonmohome.firebaseapp.com/",
-    databaseURL: "https://joonmohome-default-rtdb.firebaseio.com/",
-    projectId: "joonmohome",
-    storageBucket: "gs://joonmohome.appspot.com",
-    messagingSenderId: "407521114451"
-};
-firebase.initializeApp(config)
+// var config = {
+//     apiKey: "AIzaSyCEsUYmEz_qu9V8RSLjPKI3ZwRXn1lVKDQ",
+//     authDomain: "joonmohome.firebaseapp.com",
+//     databaseURL: "https://joonmohome-default-rtdb.firebaseio.com",
+//     projectId: "joonmohome",
+//     storageBucket: "joonmohome.appspot.com",
+//     messagingSenderId: "407521114451",
+//     appId: "1:407521114451:web:8e7325fec85349447209a6",
+//     measurementId: "G-59PZS1P5X9"
+//   };
+// firebase.initializeApp(config)
+
 var db = firebase.firestore().collection('article');
 
 

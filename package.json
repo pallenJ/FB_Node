@@ -6,7 +6,7 @@
     "start": "node ./bin/www"
   },
   "engines": {
-    "node": "14"
+    "node": "12"
   },
   "dependencies": {
     "12": "^1.0.2",
@@ -23,8 +23,7 @@
     "firebase-tools": "^9.12.1",
     "http-errors": "~1.6.3",
     "log4js": "^6.3.0",
-    "morgan": "~1.9.1",
-    "startbootstrap": "0.0.1"
+    "morgan": "~1.9.1"
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.3.0"

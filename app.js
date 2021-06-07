@@ -3,6 +3,19 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var firebase = require('firebase').default
+var config = {
+    apiKey: "AIzaSyCEsUYmEz_qu9V8RSLjPKI3ZwRXn1lVKDQ",
+    authDomain: "joonmohome.firebaseapp.com",
+    databaseURL: "https://joonmohome-default-rtdb.firebaseio.com",
+    projectId: "joonmohome",
+    storageBucket: "joonmohome.appspot.com",
+    messagingSenderId: "407521114451",
+    appId: "1:407521114451:web:8e7325fec85349447209a6",
+    measurementId: "G-59PZS1P5X9"
+  };
+firebase.initializeApp(config)
+//var serviceAccount = require('./joonmohome-firebase-adminsdk-6gzmi-1bfb4adf29.json')
 
 var indexRouter = require('./routes/index.js');
 var usersRouter = require('./routes/users.js');
@@ -10,7 +23,7 @@ var articleRouter = require('./routes/article.js');
 var log = require('log4js').getLogger();
 var app = express();
 
-//var serviceAccount = require('./joonmohome-firebase-adminsdk-6gzmi-1bfb4adf29.json')
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -25,7 +38,6 @@ app.use('/users', usersRouter);
 app.use('/article', articleRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-    log.debug('aaa')
     next(createError(404));
 });
 
